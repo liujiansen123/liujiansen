@@ -1,0 +1,209 @@
+html {
+  font-size: 100px;
+}
+@media screen and (width: 320px) {
+  html {
+    font-size: 42.66666666666667px;
+    /* 320/750 * 100 */
+  }
+}
+@media screen and (width: 375px) {
+  html {
+    font-size: 50px;
+    /* 375/750 * 100 */
+  }
+}
+@media screen and (width: 414px) {
+  html {
+    font-size: 55.2px;
+    /* 414/750 * 100 */
+  }
+}
+html,
+body,
+ul,
+li,
+ol,
+dl,
+dd,
+dt,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+form,
+fieldset,
+legend,
+img {
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+  box-sizing: border-box;
+}
+fieldset,
+img {
+  border: none;
+}
+h1 {
+  font-weight: normal;
+}
+img {
+  display: block;
+}
+em,
+i {
+  font-style: normal;
+}
+address,
+caption,
+cite,
+code,
+dfn,
+th,
+var {
+  font-style: normal;
+  font-weight: normal;
+}
+ul,
+ol {
+  list-style: none;
+}
+input {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+input::-moz-focus-inner {
+  border: none;
+  padding: 0;
+}
+select,
+input {
+  vertical-align: middle;
+}
+select,
+input,
+textarea {
+  font-size: 12px;
+  margin: 0;
+}
+input[type="text"],
+input[type="password"],
+textarea {
+  outline-style: none;
+  -webkit-appearance: none;
+}
+textarea {
+  resize: none;
+}
+input,
+textarea {
+  background: none;
+  border: none;
+}
+table {
+  border-collapse: collapse;
+}
+body {
+  color: #333;
+  font: 12px "SimSun", "宋体", "Arial Narrow", HELVETICA;
+  background: #fff;
+}
+a {
+  color: #666;
+  text-decoration: none;
+}
+header {
+  height: 0.93rem;
+  background-color: #FA3432;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 0.3rem;
+  padding-right: 0.3rem;
+  font-size: 0.35rem;
+  color: #fff;
+}
+header .iconfont {
+  color: #fff;
+  font-size: 0.3rem;
+}
+.maotou {
+  height: 3.3rem;
+  display: flex;
+}
+.maotou img {
+  margin: auto;
+}
+.zhuceye leble {
+  font-size: 0.26rem;
+  color: #0E0E0E;
+}
+.zhuceye .shuru {
+  width: 7rem;
+  height: 0.77rem;
+  margin-top: 0.22rem;
+  border-radius: 0.1rem;
+  margin-bottom: 0.23rem;
+  background-color: #fff;
+  margin-left: auto;
+  margin-right: auto;
+  border: 1px solid #eee;
+  display: flex;
+}
+.zhuceye .shuru .iconfont {
+  font-size: 0.7rem;
+  color: #CCD5D8;
+  line-height: 0.7rem;
+}
+.zhuceye .shuru input {
+  font-size: 0.35rem;
+}
+.zhuceye .tijiao {
+  width: 6.92rem;
+  height: 0.81rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+.zhuceye .tijiao .xiayibu {
+  width: 6.92rem;
+  height: 0.81rem;
+  background-color: #FA3432;
+  border-radius: 0.1rem;
+  font-size: 0.3rem;
+  color: #fff;
+}
+.zhuceye .xieyi {
+  font-size: 0.25rem;
+  color: #5E5E5E;
+  text-align: center;
+  margin-top: 0.2rem;
+}
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 7.5rem;
+}
+body {
+  font-family: "Microsoft Yahei", "微软雅黑";
+  background-color: #f9f9f9;
+}
+footer {
+  margin-top: 0.23rem;
+  height: 1.65rem;
+  border-top: 1px solid #E0E0DF;
+  background-color: #fff;
+  line-height: 0.5rem;
+  padding-top: 0.45rem;
+}
+footer p {
+  text-align: center;
+  color: #494848;
+  font-size: 0.28rem;
+}
+footer .copyright {
+  color: #9a9b9c;
+  font-size: 0.26rem;
+}

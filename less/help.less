@@ -1,0 +1,83 @@
+@import "z.less";
+.reset-sina();
+
+//帮助中心头部
+header{
+    .h(93);
+    background-color: #FA3432;
+    .flex_b();
+    .pl(30);
+    .pr(30);
+    .fs(35);
+    color: #fff;
+   .iconfont{
+        color: #fff;
+        .fs(30);
+    }
+}
+.helplist{
+    .p(15,30,0,30);
+    .help_list{
+            a{
+              display: flex;
+              .flex_b();
+              .fs(25);
+              color: #4c4b4b;
+              .mb(27);
+              span:last-of-type{
+                  color: #FA952A;
+              }
+              .iconfont{
+                  .mr(21);
+                  display: inline-block;
+                 .w(58);
+                 .h(58);
+                 .br(5);
+                 .fs(30);
+                 background-color: #FA9A33;
+                 color: #fff;
+                 .lh(58);
+                 text-align: center;
+              }   
+            }
+            
+    }
+}
+//客服热线
+.service{
+    .mt(38);
+    .h(103);
+    background-color: #fff;
+    display: flex;
+    .pl(30);
+    .pt(25);
+//  box-sizing: border-box;
+//  .lh(128);
+    .iconfont{
+        display: inline-block;
+        .w(78);
+        .h(80);
+        background-color:#22CFD8;
+        .fs(40);
+        color: #fff;
+        text-align: center;
+        .lh(80);
+        .br(10);
+        .mr(28);
+    }
+    div{
+        p{
+            .fs(20);
+            color: #999898;
+        }
+        .service_p{
+            .fs(25);
+            color: #4A4848;
+            em{
+                color: #06A2CE;
+                .ml(10);
+            }
+        }
+    }
+}
+@import "public.less";

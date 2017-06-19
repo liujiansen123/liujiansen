@@ -1,0 +1,390 @@
+html {
+  font-size: 100px;
+}
+@media screen and (width: 320px) {
+  html {
+    font-size: 42.66666666666667px;
+    /* 320/750 * 100 */
+  }
+}
+@media screen and (width: 375px) {
+  html {
+    font-size: 50px;
+    /* 375/750 * 100 */
+  }
+}
+@media screen and (width: 414px) {
+  html {
+    font-size: 55.2px;
+    /* 414/750 * 100 */
+  }
+}
+html,
+body,
+ul,
+li,
+ol,
+dl,
+dd,
+dt,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+form,
+fieldset,
+legend,
+img {
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+  box-sizing: border-box;
+}
+fieldset,
+img {
+  border: none;
+}
+h1 {
+  font-weight: normal;
+}
+img {
+  display: block;
+}
+em,
+i {
+  font-style: normal;
+}
+address,
+caption,
+cite,
+code,
+dfn,
+th,
+var {
+  font-style: normal;
+  font-weight: normal;
+}
+ul,
+ol {
+  list-style: none;
+}
+input {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+input::-moz-focus-inner {
+  border: none;
+  padding: 0;
+}
+select,
+input {
+  vertical-align: middle;
+}
+select,
+input,
+textarea {
+  font-size: 12px;
+  margin: 0;
+}
+input[type="text"],
+input[type="password"],
+textarea {
+  outline-style: none;
+  -webkit-appearance: none;
+}
+textarea {
+  resize: none;
+}
+input,
+textarea {
+  background: none;
+  border: none;
+}
+table {
+  border-collapse: collapse;
+}
+body {
+  color: #333;
+  font: 12px "SimSun", "宋体", "Arial Narrow", HELVETICA;
+  background: #fff;
+}
+a {
+  color: #666;
+  text-decoration: none;
+}
+body {
+  font-family: "Microsoft Yahei", "微软雅黑";
+  background-color: #f9f9f9;
+}
+header {
+  height: 0.94rem;
+  padding-left: 0.17rem;
+  padding-right: 0.3rem;
+  font-size: 0.3rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #FA3432;
+}
+header a {
+  color: #ffffff;
+}
+header h1 {
+  font-size: 0.3rem;
+  line-height: 0.49rem;
+}
+header h1 a {
+  display: block;
+  width: 2.08rem;
+  height: 0.49rem;
+  background: url(../img/login_img.png) no-repeat left center;
+  background-size: 0.47rem 0.49rem;
+  padding-left: 0.56rem;
+}
+header div {
+  color: #fff;
+}
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 0.86rem;
+  font-size: 0.24rem;
+}
+nav .shouye {
+  color: #ff3636;
+}
+.swipe {
+  overflow: hidden;
+  visibility: hidden;
+  position: relative;
+}
+.swipe-wrap {
+  overflow: hidden;
+  position: relative;
+}
+.swipe-wrap > div {
+  float: left;
+  width: 100%;
+  position: relative;
+}
+img {
+  width: 100%;
+  height: 3.62rem;
+}
+ul,
+li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.indirector {
+  position: absolute;
+  bottom: 5px;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-bottom: 0.2rem;
+}
+.indirector li {
+  float: left;
+  width: 0.2rem;
+  height: 0.2rem;
+  border-radius: 0.1rem;
+  background-color: #ccc;
+  margin: 0rem 0.1rem 0rem 0.1rem;
+  transition: transform .5s;
+}
+.indirector li.current {
+  background-color: blue;
+  transform: scale(1.2);
+}
+.nav {
+  height: 2rem;
+  border-bottom: 1px solid #E0E0DF;
+  font-size: 0.24rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.nav .iconfont {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 0.09rem;
+  display: block;
+  width: 0.9rem;
+  height: 0.9rem;
+  line-height: 0.9rem;
+  font-size: 0.5rem;
+  border-radius: 0.3rem;
+  color: #fff;
+  text-align: center;
+}
+.nav .icon-lock-fill {
+  background-color: #4099E9;
+}
+.nav .icon-jiaruwomen {
+  background-color: #FB6361;
+}
+.nav .icon-xinshouzhiyin {
+  background-color: #40C8B0;
+}
+.nav .icon-wenhao {
+  background-color: #FFAE28;
+}
+.hot {
+  background-color: #F9F9F9;
+  padding-left: 0.25rem;
+  padding-right: 0.25rem;
+}
+.hot .hot_chanpin {
+  padding-left: 0.25rem;
+  padding-right: 0.25rem;
+  color: #494848;
+  height: 0.95rem;
+  font-size: 0.3rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.hot .hot_chanpin .iconfont {
+  font-size: 0.3rem;
+  color: #FF0000;
+  margin-right: 0.16rem;
+}
+.hot .hot_chanpin a {
+  color: #9a9b9c;
+}
+.hot .item {
+  height: 2.55rem;
+  padding: 0.25rem 0.25rem 0.25rem 0.25rem;
+  background-color: #fff;
+  border: 1px solid #EEEEEE;
+  margin-bottom: 0.25rem;
+}
+.hot .item h4 {
+  display: flex;
+}
+.hot .item h4 span {
+  color: #494848;
+  font-size: 0.28rem;
+  margin-right: auto;
+}
+.hot .item h4 .cash {
+  width: 0.85rem;
+  height: 0.3rem;
+  line-height: 0.3rem;
+  background-color: #FFAB37;
+  font-size: 0.22rem;
+  color: #fff;
+  text-align: center;
+}
+.hot .item h4 .iconfont {
+  width: 0.33rem;
+  height: 0.3rem;
+  text-align: center;
+  line-height: 0.3rem;
+  background-color: #FF7404;
+  margin-left: 0.1rem;
+}
+.hot .item .data {
+  height: 1.4rem;
+  margin-top: 0.28rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.hot .item .data .data1 {
+  margin-left: 0.43rem;
+  font-size: 0.24rem;
+  color: #FF7900;
+}
+.hot .item .data .data1 em {
+  font-size: 0.38rem;
+  color: #FB4034;
+}
+.hot .item .data .data2 {
+  font-size: 0.3rem;
+  color: #9a9b9c;
+}
+.hot .item .data .data2 em {
+  font-size: 0.3rem;
+  color: #3d3c3c;
+  margin-right: 0.1rem;
+}
+.qiye {
+  background-color: #F9F9F9 ;
+}
+.qiye .hot_chanpin {
+  padding-left: 0.25rem;
+  padding-right: 0.25rem;
+  color: #494848;
+  height: 0.95rem;
+  font-size: 0.3rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.qiye .hot_chanpin .iconfont {
+  font-size: 0.3rem;
+  color: #FF0000;
+  margin-right: 0.16rem;
+}
+.qiye ul .newlist:last-of-type {
+  padding-bottom: 0.32rem;
+  border-bottom: 1px solid #E0E0DF;
+}
+.qiye ul .newlist {
+  padding-left: 0.23rem;
+  padding-right: 0.23rem;
+  box-sizing: content-box;
+  padding-top: 0.35rem;
+  height: 1.1rem;
+  background-color: #fff;
+}
+.qiye ul .newlist a {
+  display: flex;
+}
+.qiye ul .newlist a img {
+  width: 1.1rem;
+  height: 1.1rem;
+  margin-right: 0.23rem;
+  flex: 0 0 auto;
+  border-radius: 0.15rem;
+}
+.qiye ul .newlist a div {
+  color: #9a9b9c;
+  flex: 1 1 auto;
+  font-size: 0.25rem;
+  line-height: 0.55rem;
+}
+.qiye ul .newlist a div h4 {
+  font-size: 0.28rem;
+  color: #494848;
+}
+.qiye ul .newlist a div p em {
+  float: right;
+}
+body {
+  font-family: "Microsoft Yahei", "微软雅黑";
+  background-color: #f9f9f9;
+}
+footer {
+  margin-top: 0.23rem;
+  height: 1.65rem;
+  border-top: 1px solid #E0E0DF;
+  background-color: #fff;
+  line-height: 0.5rem;
+  padding-top: 0.45rem;
+}
+footer p {
+  text-align: center;
+  color: #494848;
+  font-size: 0.28rem;
+}
+footer .copyright {
+  color: #9a9b9c;
+  font-size: 0.26rem;
+}

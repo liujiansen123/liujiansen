@@ -1,0 +1,21 @@
+html {
+  font-size: 100px;
+}
+@media screen and (width: 320px) {
+  html {
+    font-size: 42.66666666666667px;
+    /* 320/750 * 100 */
+  }
+}
+@media screen and (width: 375px) {
+  html {
+    font-size: 50px;
+    /* 375/750 * 100 */
+  }
+}
+@media screen and (width: 414px) {
+  html {
+    font-size: 55.2px;
+    /* 414/750 * 100 */
+  }
+}

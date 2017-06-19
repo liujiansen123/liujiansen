@@ -1,0 +1,320 @@
+@import "z.less";
+.reset-sina();
+//@basic:100px;  //设置一个基准值
+//html{
+//	font-size:@basic;
+//}
+body{
+	.font-fm();
+	background-color: #f9f9f9;
+}
+
+//iphone5
+//@media screen and (width:320px){
+//	html{
+//		font-size:42.66666666666667px;
+//	}
+//};
+////iphone6
+//@media screen and (width:375px){  
+//  html{  
+//      font-size:50px;     /* 375/750 * 100 */
+//  }  
+//} 
+////iphone6p
+//@media screen and (width:414px){  
+//  html{  
+//      font-size:55.2px;     /* 375/750 * 100 */
+//  }  
+//} 
+
+////各种轮子
+//.h(@value){height:@value/@basic*1rem;}
+//.w(@value){width: @value/@basic * 1rem;}
+//.lh(@value){line-height:@value/@basic*1rem}
+//
+//.mt(@value){margin-top: @value/@basic*1rem;}
+//.mr(@value){margin-right: @value/@basic*1rem;}
+//.mb(@value){margin-bottom: @value/@basic*1rem;}
+//.ml(@value){margin-left: @value/@basic*1rem;}
+//.m(@v1,@v2,@v3,@v4){margin: @v1/@basic*1rem @v2/@basic*1rem @v3/@basic*1rem @v4/@basic*1rem;}
+//
+//.pt(@value){padding-top: @value/@basic * 1rem;}
+//.pl(@value){padding-left: @value/@basic * 1rem;}
+//.pr(@value){padding-right: @value/@basic * 1rem;}
+//.pb(@value){padding-bottom: @value/@basic * 1rem;}
+//.p(@v1,@v2,@v3,@v4){padding: @v1/@basic*1rem @v2/@basic*1rem @v3/@basic*1rem @v4/@basic*1rem;}
+//
+//.br(@value){border-radius: @value/@basic * 1rem;}
+//
+//.fs(@value){font-size: @value/@basic * 1rem;}
+//
+//
+//.bs(@v1,@v2){background-size:@v1/@basic * 1rem @v2/@basic*1rem;}
+//.flex_b(){
+//	display:flex;
+//	justify-content:space-between;
+//	align-items:center;
+//}
+//.flex_a(){
+//	display:flex;
+//	justify-content:space-around;
+//	align-items:center;
+//}
+header{
+	.h(94);
+	.pl(17);
+	.pr(30);
+	.fs(30);
+	.flex_b();
+	a{color:#fff}
+	background-color:#FA3432;
+	h1{
+		.fs(30);
+		.lh(49);
+
+		a{
+			.d-b();
+			.w(208);
+			.h(49);	
+			background:url(../img/login_img.png) no-repeat left center;
+			.bs(47,49);
+			.pl(56);
+		}
+	}
+	div{
+		color:#fff;
+	}
+}
+nav{
+	.flex_a();
+	.h(86);
+	.fs(24);
+	.shouye{
+		color:#ff3636;
+	}
+}
+
+//轮播图
+    .swipe 
+    {
+      overflow: hidden;
+      visibility: hidden;
+      position: relative;
+    }
+    .swipe-wrap {
+      overflow: hidden;
+      position: relative;
+    }
+    .swipe-wrap > div {
+      float:left;
+      width:100%;
+      position: relative;
+    }
+    img{width: 100%;.h(362);}
+    
+    ul,li{margin: 0;padding:0;list-style: none;}
+    .indirector{
+        position: absolute;
+        bottom:5px;
+        left:50%;
+        transform: translateX(-50%);
+        .mb(20);
+    }
+    .indirector li{
+        float: left;
+       .w(20);
+        .h(20);
+        .br(10);
+        background-color: #ccc;
+        .m(0,10,0,10);
+        transition:transform .5s;
+    }
+    .indirector li.current{
+        background-color: blue;
+        transform: scale(1.2);
+    }
+//轮播图end
+
+
+
+
+
+
+//安全保障 关于我们 新手指引 帮助中心
+.nav{
+    .h(200);
+    border-bottom: 1px solid #E0E0DF;
+    
+    .fs(24);
+    .flex_a();
+    .iconfont{
+        margin-left:auto;
+        margin-right: auto;
+        .mb(9);
+        display: block;
+        .w(90);
+        .h(90);
+        .lh(90);
+        .fs(50);
+        .br(30);
+        color: #fff;
+        text-align: center;
+    }
+    .icon-lock-fill{
+        background-color: #4099E9;
+    }
+    .icon-jiaruwomen{
+        background-color: #FB6361;
+    }
+    .icon-xinshouzhiyin{
+        background-color: #40C8B0;
+    }
+    .icon-wenhao{
+        background-color: #FFAE28;
+    }
+    
+}
+//热门产品
+
+.hot{
+    background-color: #F9F9F9;
+    .pl(25);
+    .pr(25);
+    .hot_chanpin{
+        .pl(25);
+        .pr(25);
+        color:#494848;
+        .iconfont{
+            .fs(30);
+            color:#FF0000;
+            .mr(16);
+        }
+        
+        .h(95);
+        .fs(30);
+        .flex_b();
+        a{color:#9a9b9c}
+    }
+    .item{
+        .h(255);
+        .p(25,25,25,25);
+        background-color: #fff;
+        border:1px solid #EEEEEE;
+        .mb(25);
+        h4{ 
+            display: flex;
+            span{
+                color: #494848;
+                .fs(28);
+                margin-right: auto;
+            }
+            .cash{
+                .w(85);
+                .h(30);
+                .lh(30);
+                background-color: #FFAB37;
+                .fs(22);
+                color:#fff;
+                text-align: center;
+            }
+            .iconfont{
+                .w(33);
+                .h(30);
+                text-align: center;
+                .lh(30);
+                background-color: #FF7404;
+                .ml(10);
+            }
+        }
+        .data{
+            .h(140);
+            .mt(28);
+            .flex_b();
+            .data1{
+                .ml(43);
+                .fs(24);
+                color: #FF7900;
+                em{
+                    .fs(38);
+                    color:#FB4034;
+                }
+            }
+            .data2{
+                .fs(30);
+                color: #9a9b9c;
+                em{
+                    .fs(30);
+                    color: #3d3c3c;
+                    .mr(10);
+                }
+            }
+        }
+    }
+}
+
+
+//企业动态
+.qiye{
+    background-color:#F9F9F9 ;
+    
+    .hot_chanpin{
+        .pl(25);
+        .pr(25);
+        color:#494848;
+        .iconfont{
+            .fs(30);
+            color:#FF0000;
+            .mr(16);
+        }
+        
+        .h(95);
+        .fs(30);
+        .flex_b();
+    }
+    ul{
+        .newlist:last-of-type{
+            .pb(32);
+            border-bottom: 1px solid #E0E0DF;
+        }
+        .newlist{
+            .pl(23);
+            .pr(23);
+            
+            box-sizing: content-box;
+            .pt(35);
+            .h(110);
+            background-color: #fff;
+            a{
+              display: flex;  
+                 img{
+                    .w(110);
+                    .h(110);
+                    .mr(23);
+                    flex:0 0 auto;
+                    .br(15);
+                }
+                div{
+                     
+                    h4{
+                        .fs(28);
+                        color: #494848;
+                    }
+                    p{
+                        em{float:right}
+                    }
+                    color: #9a9b9c;
+                     flex:1 1 auto;
+                     .fs(25);
+                     .lh(55);
+                } 
+            }
+        } 
+        
+    }
+    
+}
+
+
+//底部导航
+@import "public.less";

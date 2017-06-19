@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+	<link rel="stylesheet" type="text/css" href="css/detail.css"/>
+	<link rel="stylesheet" type="text/css" href="css/iconfont.css"/>
+	<title>Document</title>
+</head>
+<body>
+	<header>
+		<a href="Index.html" class="iconfont icon-fanhui"></a>
+		<span>验证手机号码</span>
+		
+		<i class="iconfont icon-caidan" id="san"></i>
+	</header>
+	<section class="data">
+		<p>9.2%+0.5%</p>
+		<p>9.7%(9.2活动加息0.5%)</p>
+	</section>
+	<section class="deta">
+		<p>1000元起投</p>
+		<p>限期180天</p>
+	</section>
+	<section class="promise">
+		<ul>
+			<li><i class="iconfont icon-zhuye"></i>省级律所法律支持</li>
+			<li><i class="iconfont icon-zhuye"></i>省级律所法律支持</li>
+			<li><i class="iconfont icon-zhuye"></i>省级律所法律支持</li>
+			<li><i class="iconfont icon-zhuye"></i>省级律所法律支持</li>
+		</ul>
+	</section>
+	<section class="process">
+		<div class="bg" id="bg">
+			<div class="bg1" id="bg1"></div>
+			<div class="bg2" id="bg2">37%</div>
+		</div>
+		<p>
+			<span>已投资<em id="renshu">37</em>人>></span>
+			<span>剩余可投<em>623000</em>元</span>
+		</p>
+	</section>
+	<section class="footer">
+		<a href="">收益估算</a>
+		<input type="button" value="立即投资"/>
+	</section>
+	
+	<div class="mask" id="mask">
+		<div class="mask_top">
+			<a href=""><i class="iconfont icon-zhuye"></i>主页</a>
+			<a href=""><i class="iconfont icon-suo"></i>安全保障</a>
+			<a href=""><i class="iconfont icon-lock-fill"></i>关于我们</a>
+			<a href=""><i class="iconfont icon-wode"></i>我要投资</a>
+		</div>
+	</div>
+	<script src="js/zepto/zepto.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/app.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/zepto/event.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/zepto/fx.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/zepto/touch.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+		$(function(){
+			var dangqian = 50;
+			var bgwidth = $("#bg").width();
+			
+			var newwidth = dangqian*bgwidth/100;
+			var newleft = newwidth-$("#bg2").width()/2;
+			
+			$("#bg2").animate({left:newleft},1000);
+			$("#bg1").animate({width:newwidth},1000);
+			$("#bg2").html(dangqian+"%");
+			$("#renshu").html(dangqian);
+			//console.log(newwidth);
+			
+			$("#san").on("tap",function(){
+				//console.log(123);
+				$("#mask").toggle();
+			})
+		})
+	</script>
+	
+</body>
+</html>

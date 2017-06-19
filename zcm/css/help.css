@@ -1,0 +1,211 @@
+html {
+  font-size: 100px;
+}
+@media screen and (width: 320px) {
+  html {
+    font-size: 42.66666666666667px;
+    /* 320/750 * 100 */
+  }
+}
+@media screen and (width: 375px) {
+  html {
+    font-size: 50px;
+    /* 375/750 * 100 */
+  }
+}
+@media screen and (width: 414px) {
+  html {
+    font-size: 55.2px;
+    /* 414/750 * 100 */
+  }
+}
+html,
+body,
+ul,
+li,
+ol,
+dl,
+dd,
+dt,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+form,
+fieldset,
+legend,
+img {
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+  box-sizing: border-box;
+}
+fieldset,
+img {
+  border: none;
+}
+h1 {
+  font-weight: normal;
+}
+img {
+  display: block;
+}
+em,
+i {
+  font-style: normal;
+}
+address,
+caption,
+cite,
+code,
+dfn,
+th,
+var {
+  font-style: normal;
+  font-weight: normal;
+}
+ul,
+ol {
+  list-style: none;
+}
+input {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+input::-moz-focus-inner {
+  border: none;
+  padding: 0;
+}
+select,
+input {
+  vertical-align: middle;
+}
+select,
+input,
+textarea {
+  font-size: 12px;
+  margin: 0;
+}
+input[type="text"],
+input[type="password"],
+textarea {
+  outline-style: none;
+  -webkit-appearance: none;
+}
+textarea {
+  resize: none;
+}
+input,
+textarea {
+  background: none;
+  border: none;
+}
+table {
+  border-collapse: collapse;
+}
+body {
+  color: #333;
+  font: 12px "SimSun", "宋体", "Arial Narrow", HELVETICA;
+  background: #fff;
+}
+a {
+  color: #666;
+  text-decoration: none;
+}
+header {
+  height: 0.93rem;
+  background-color: #FA3432;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 0.3rem;
+  padding-right: 0.3rem;
+  font-size: 0.35rem;
+  color: #fff;
+}
+header .iconfont {
+  color: #fff;
+  font-size: 0.3rem;
+}
+.helplist {
+  padding: 0.15rem 0.3rem 0rem 0.3rem;
+}
+.helplist .help_list a {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.25rem;
+  color: #4c4b4b;
+  margin-bottom: 0.27rem;
+}
+.helplist .help_list a span:last-of-type {
+  color: #FA952A;
+}
+.helplist .help_list a .iconfont {
+  margin-right: 0.21rem;
+  display: inline-block;
+  width: 0.58rem;
+  height: 0.58rem;
+  border-radius: 0.05rem;
+  font-size: 0.3rem;
+  background-color: #FA9A33;
+  color: #fff;
+  line-height: 0.58rem;
+  text-align: center;
+}
+.service {
+  margin-top: 0.38rem;
+  height: 1.03rem;
+  background-color: #fff;
+  display: flex;
+  padding-left: 0.3rem;
+  padding-top: 0.25rem;
+}
+.service .iconfont {
+  display: inline-block;
+  width: 0.78rem;
+  height: 0.8rem;
+  background-color: #22CFD8;
+  font-size: 0.4rem;
+  color: #fff;
+  text-align: center;
+  line-height: 0.8rem;
+  border-radius: 0.1rem;
+  margin-right: 0.28rem;
+}
+.service div p {
+  font-size: 0.2rem;
+  color: #999898;
+}
+.service div .service_p {
+  font-size: 0.25rem;
+  color: #4A4848;
+}
+.service div .service_p em {
+  color: #06A2CE;
+  margin-left: 0.1rem;
+}
+body {
+  font-family: "Microsoft Yahei", "微软雅黑";
+  background-color: #f9f9f9;
+}
+footer {
+  margin-top: 0.23rem;
+  height: 1.65rem;
+  border-top: 1px solid #E0E0DF;
+  background-color: #fff;
+  line-height: 0.5rem;
+  padding-top: 0.45rem;
+}
+footer p {
+  text-align: center;
+  color: #494848;
+  font-size: 0.28rem;
+}
+footer .copyright {
+  color: #9a9b9c;
+  font-size: 0.26rem;
+}

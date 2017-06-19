@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="stylesheet" href="css/index.css">
+	<link rel="stylesheet" type="text/css" href="css/iconfont.css"/>
+	<title>我的猫--主页</title>
+</head>
+<body>
+	<header>
+		<h1>
+
+			<a href="">我的猫</a>
+		</h1>
+		<div>
+			<a href="">注册</a> | 
+			<a href="">登录</a>
+		</div>
+	</header>
+	<nav>
+		<a href="" class="shouye">首页</a>
+		<a href="">我要投资</a>
+		<a href="">账号中心</a>
+	</nav>
+	
+	<!--轮播图-->
+	<div id='slider' class='swipe'>
+		<div class='swipe-wrap'>
+		    <div><img src="img/slider1.jpg"/></div>
+		    <div><img src="img/slider2.jpg"/></div>
+		    <!--<div id="">
+		    	<img src="img/news20170309133946_工资日标题.jpg" alt="" />
+		    </div>-->
+		</div>
+		  
+		  <ul class="indirector">
+		  	<li class="current"></li>
+		  	<li></li>
+		  	<!--<li>3</li>-->
+		  </ul>
+	</div>
+	<!--轮播图end-->
+	
+	
+	<section class="nav">
+		<a href=""><i class="iconfont icon-lock-fill"></i><span id="">安全保障</span></a>
+		<a href=""><i class="iconfont icon-jiaruwomen"></i><span id="">关于我们</span></a>
+		<a href=""><i class="iconfont icon-xinshouzhiyin"></i><span id="">新手指引</span></a>
+		<a href="Hhelp.html"><i class="iconfont icon-wenhao"></i><span id="">帮助中心</span></a>
+		
+	</section>
+	<section class="hot">
+		<div class="hot_chanpin">
+			<div>
+				<h3><i class="iconfont icon-weibiaoti--"></i>热门产品</h3>	
+			</div>	
+			<a href="">更多</a>
+		</div>	
+		<ul>
+			<li class="item">
+				<h4><span>盈信计划2467号1期</span><i class="cash">返现金</i><i class="iconfont icon-vip"></i></h4>
+				<div class="data">
+					<div class="data1">
+						<em>9.2%</em>+0.5%
+					</div>
+					<div class="data2">
+						<p><em>180</em>天</p>
+						<p>投资期限</p>
+					</div>
+					<div>
+					圆形
+					</div>
+				</div>
+			</li>
+			<li class="item">
+				<h4><span>盈信计划2467号1期</span><i class="cash">返现金</i><i class="iconfont icon-vip"></i></h4>
+				<div class="data">
+					<div class="data1">
+						<em>9.2%</em>+0.5%
+					</div>
+					<div class="data2">
+						<p><em>180</em>天</p>
+						<p>投资期限</p>
+					</div>
+					<div>
+					圆形
+					</div>
+				</div>
+			</li>
+			<li class="item">
+				<h4><span>盈信计划2467号1期</span><i class="cash">返现金</i><i class="iconfont icon-vip"></i></h4>
+				<div class="data">
+					<div class="data1">
+						<em>9.2%</em>+0.5%
+					</div>
+					<div class="data2">
+						<p><em>180</em>天</p>
+						<p>投资期限</p>
+					</div>
+					<div>
+					圆形
+					</div>
+				</div>
+			</li>
+		</ul>
+	</section>
+	<section class="qiye">
+		<div class="hot_chanpin">
+			<div>
+				<h3><i class="iconfont icon-artboard13"></i>企业动态</h3>	
+			</div>
+		</div>	
+		<ul>
+			<li class="newlist">
+				<a href="">
+					<img src="img/news20170310144045_植树节专享标题.jpg" alt="" />
+					<div>
+						<h4>春日梦想 指数专享</h4>
+						<p><i>来源:招财猫理财</i><em>2017-3-10</em></p>
+					</div>
+				</a>
+			</li>
+			<li class="newlist">
+				<a href="">
+					<img src="img/news20170310144045_植树节专享标题.jpg" alt="" />
+					<div>
+						<h4>春日梦想 指数专享</h4>
+						<p><i>来源:招财猫理财</i><em>2017-3-10</em></p>
+					</div>
+				</a>
+			</li><li class="newlist">
+				<a href="">
+					<img src="img/news20170310144045_植树节专享标题.jpg" alt="" />
+					<div>
+						<h4>春日梦想 指数专享</h4>
+						<p><i>来源:招财猫理财</i><em>2017-3-10</em></p>
+					</div>
+				</a>
+			</li>
+		</ul>
+	</section>
+	
+	<!--底部导航-->
+	<footer>
+		<p>
+			<a href="">触摸板</a> | 
+			<a href="">电脑版</a> | 
+			<a href="">APP下载</a>
+		</p>
+		<p class="copyright">
+			&copy;招财猫理财 浙ICP备14041616号
+			
+		</p>
+	</footer>
+	<script type="text/javascript" src="js/zepto/zepto.js"></script>
+	<script type="text/javascript" src="js/swipe.js"></script>
+	<script type="text/javascript">
+		window.mySwipe = Swipe(document.getElementById('slider'),{
+//			auto:2000,
+			continuous :true,
+			callback:function(index,ele){
+				console.info(index,ele);
+				
+				$(".indirector li").removeClass("current").eq(index%2).addClass("current");
+			}
+		});
+	</script>
+</body>
+</html>
